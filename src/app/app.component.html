@@ -1,3 +1,17 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Home</a>
+      <a class="navbar-brand" routerLink="newCollection">New</a>
+      <a class="navbar-brand" routerLink="hotCollection">Hot</a>
+      <a class="navbar-brand" routerLink="risingCollection">Rising</a>
+      <a class="navbar-brand" routerLink="controversialCollection">Controversial</a>
+    </div>
+  </div>
+</nav>
+<div class="container">
+  <h1>{{title}}</h1>
+  <h4>Checkout what has been posted by other users using the links above!</h4>
+  <button type="click" class="btn" routerLink="newPost" >Add new post</button>
+  <router-outlet></router-outlet>
+</div>
