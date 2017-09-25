@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Post } from '../post.model';
 import { Router } from '@angular/router';
 
@@ -8,11 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./new-post.component.css']
 })
 export class NewPostComponent {
+  @Output() newPostSender = new EventEmitter;
 
-  constructor(private router: Router) { }
+  submitForm(title:string, author:string, details: string, image: string){
+    var newPostToAdd: Post = new Post(title, author, details, image);
+    this.newPostSender.emit(newPostToAdd);
+  }
 
-  posts: Post[] = [
-    new Post('Mount St. Helens peaking above beautiful wildflowers and thick fog', 'mystery', 'Check out this image of Mount St. Helens', '../resources/iamges/mt.jpg')
-  ]
+
 
 }

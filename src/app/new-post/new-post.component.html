@@ -1,20 +1,20 @@
 <form>
-  <div class="form-group">
-    <label for="title">Enter Title Here</label>
-    <input id="title" class="form-control">
-  </div>
-  <div class="form-group">
-    <label for="author">Enter Your name Here</label>
-    <input id="author" class="form-control">
-  </div>
-  <div class="form-group">
-    <label for="post">Enter Post:</label>
-    <input id="post" class="form-control">
-  </div>
-  <div class="form-group">
-    <label for="image">Enter Image:</label>
-    <input id="image" class="form-control">
-  </div>
-  <button type="submit">Submit Info</button>
+    <div>
+     <label>Enter Title:</label>
+     <input #title type="text">
+    </div>
+    <div>
+      <label>Enter Author:</label>
+      <input #author type="text">
+    </div>
+    <div>
+      <label>Enter Details about topic:</label>
+      <input #details type="text" >
+    </div>
+    <div>
+      <label>Enter Image URL:</label>
+      <input #image type="text" >
+    </div>
 
-</form>
+    <button (click)="submitForm(title.value, author.value, details.value, image.value)">Create Post!</button>
+  </form>

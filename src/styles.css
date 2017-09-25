@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+h3{
+  text-decoration: underline;
+  color: blue;
+}
+/*#newPost{
+  display: block;
+  margin: auto;
+  float: right;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: blue;
+  color: white;
+  font-size: 15px;
+}*/
+.btn-new {
+  margin-top: 10px;
+  background-color: blue;
+  color: white;
+
+}

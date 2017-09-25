@@ -9,7 +9,6 @@ import { routing } from './app.routing';
 import { HotCollectionComponent } from './hot-collection/hot-collection.component';
 import { RisingCollectionComponent } from './rising-collection/rising-collection.component';
 import { ControversialCollectionComponent } from './controversial-collection/controversial-collection.component';
-import { NewPostFormComponent } from './new-post-form/new-post-form.component';
 import { NewPostComponent } from './new-post/new-post.component';
 
 @NgModule({
@@ -19,7 +18,6 @@ import { NewPostComponent } from './new-post/new-post.component';
     HotCollectionComponent,
     RisingCollectionComponent,
     ControversialCollectionComponent,
-    NewPostFormComponent,
     NewPostComponent
   ],
   imports: [
