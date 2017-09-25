@@ -1,3 +1,4 @@
+<div class="well">
 <form>
     <div>
      <label>Enter Title:</label>
@@ -16,5 +17,6 @@
       <input #image type="text" >
     </div>
 
-    <button (click)="submitForm(title.value, author.value, details.value, image.value)">Create Post!</button>
+    <button class="btn"(click)="submitForm(title.value, author.value, details.value, image.value)">Create Post!</button>
   </form>
+</div>

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RisingCollectionComponent } from './rising-collection.component';
+import { EditPostComponent } from './edit-post.component';
 
-describe('RisingCollectionComponent', () => {
-  let component: RisingCollectionComponent;
-  let fixture: ComponentFixture<RisingCollectionComponent>;
+describe('EditPostComponent', () => {
+  let component: EditPostComponent;
+  let fixture: ComponentFixture<EditPostComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RisingCollectionComponent ]
+      declarations: [ EditPostComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RisingCollectionComponent);
+    fixture = TestBed.createComponent(EditPostComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

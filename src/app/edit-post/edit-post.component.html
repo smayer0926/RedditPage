@@ -1,0 +1,20 @@
+<div class="well" *ngIf="childSelectedPost">
+
+    <div>
+     <label>Enter Title:</label>
+     <input [(ngModel)]="childSelectedPost.title" type="text">
+    </div>
+    <div>
+      <label>Enter Author:</label>
+      <input [(ngModel)]="childSelectedPost.author" type="text">
+    </div>
+    <div>
+      <label>Enter Details about topic:</label>
+      <input [(ngModel)]="childSelectedPost.details" type="text" >
+    </div>
+    <div>
+      <label>Enter Image URL:</label>
+      <input [(ngModel)]="childSelectedPost.image" type="text" >
+    </div>
+
+    <button class="btn"(click)="editButtonClicked()">Done!</button>

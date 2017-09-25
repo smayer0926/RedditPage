@@ -3,8 +3,6 @@
     <div class="navbar-header">
       <a class="navbar-brand" routerLink="">Home</a>
       <a class="navbar-brand" routerLink="newCollection">New</a>
-      <a class="navbar-brand" routerLink="hotCollection">Hot</a>
-      <a class="navbar-brand" routerLink="risingCollection">Rising</a>
       <a class="navbar-brand" routerLink="controversialCollection">Controversial</a>
     </div>
       <ul class="nav navbar-nav navbar-right">
@@ -13,9 +11,11 @@
     </div>
 </nav>
 <div class="container">
-  <h1>{{title}}</h1>
-  <h4>Checkout what has been posted by other users using the links above or add a new post!</h4>
-
+  <div class="jumbotron">
+    <h1>{{title}}</h1>
+    <h4>Checkout what has been posted by other users using the links above or add a new post!</h4>
+  </div>
   <router-outlet></router-outlet>
+  <app-edit-post></app-edit-post>
   <app-new-post (newPostSender)="submitForm($event)"></app-new-post>
 </div>
